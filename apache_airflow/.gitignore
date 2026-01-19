@@ -1,0 +1,63 @@
+############################
+# OS / Editor
+############################
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+############################
+# Python
+############################
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv
+venv/
+
+############################
+# Airflow
+############################
+airflow.cfg
+airflow-webserver.pid
+logs/
+plugins/__pycache__/
+
+############################
+# Secrets / Credentials
+############################
+passwd
+*password*
+*secret*
+*.key
+*.pem
+*.env
+
+############################
+# Data files
+############################
+*.csv
+*.tsv
+*.xlsx
+*.json
+
+############################
+# Images
+############################
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.svg
+*.webp
+
+############################
+# Notebooks / Temp
+############################
+.ipynb_checkpoints/
+*.log
+*.tmp
+*.bak
