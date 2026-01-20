@@ -47,13 +47,13 @@ extract = BashOperator(
 # define the second task
 transform = BashOperator(
     task_id='transform',
-    bash_command='tr "a-z" "A-Z" < /home/project/airflow/dags/extracted-data.txt > /home/project/airflow/dags/transformed-data.csv',
+    bash_command='tr "[a-z]" "[A-Z]" < /home/project/airflow/dags/extracted-data.txt > /home/project/airflow/dags/transformed-data.csv',
     dag=dag,
 )
 
 load = BashOperator(
     task_id = 'load',
-    bash_command = 'gzip -f /home/project/airflow/dags/transformed-data.csv',
+    bash_command = 'zip log.zip /home/project/airflow/dags/transformed-data.csv',
     dag=dag,
 )
 
