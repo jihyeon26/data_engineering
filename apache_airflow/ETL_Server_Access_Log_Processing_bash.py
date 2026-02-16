@@ -23,7 +23,7 @@ default_args = {
 
 # define the DAG
 dag = DAG(
-    'my-first-python-etl-dag',
+    dag_id = 'my-first-python-etl-dag',
     default_args=default_args,
     description='My first DAG',
     schedule_interval=timedelta(days=1),
